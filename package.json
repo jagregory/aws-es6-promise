@@ -1,0 +1,14 @@
+{
+  "name": "aws-es6-promise",
+  "version": "0.1.0",
+  "description": "AWS SDK ES6 Promise wrapper",
+  "main": "index.js",
+  "dependencies": {
+    "aws-sdk": "^2.0.27",
+    "es6-promise": "^2.0.0"
+  },
+  "keywords": [
+    "aws",
+    "promise"
+  ]
+}
