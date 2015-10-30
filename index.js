@@ -40,5 +40,6 @@ module.exports = Object.keys(AWS)
         return obj
       }, {})
     }
+    services.config = AWS.config
     return services
   }, {})
