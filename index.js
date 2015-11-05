@@ -1,7 +1,7 @@
 'use strict';
 
-var AWS = require('aws-sdk'),
-  Promise = require('es6-promise').Promise
+var AWS = require('aws-sdk')
+require('es6-promise').polyfill()
 
 function isService(k) {
   return AWS[k].__super__ === AWS.Service
@@ -40,5 +40,6 @@ module.exports = Object.keys(AWS)
         return obj
       }, {})
     }
+    services.config = AWS.config
     return services
   }, {})
